@@ -1,0 +1,150 @@
+.sdg {
+  display: grid;
+  gap: 2rem;
+}
+
+.sdg section {
+  display: grid;
+  gap: 2rem;
+}
+
+.sdg section a {
+  display: grid;
+  padding: 0.6rem;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 0.4rem;
+  transition: all 0.4s ease-out;
+  text-decoration: none;
+  background: #292091;
+  color: white;
+}
+
+.sdg img {
+  height: 320px;
+  width: 320px;
+  margin: auto;
+}
+
+.sdg p {
+  font-size: 1rem;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+.project {
+  display: grid;
+  margin-top: 1rem;
+  border-radius: 0.4rem;
+}
+
+.project h1 {
+  font-size: 1.8rem;
+  border-radius: 0.4rem;
+  text-transform: uppercase;
+  border-bottom: 6px double #912020;
+  color: #912020;
+  padding: 1rem;
+}
+
+.right-img {
+  display: grid;
+  align-items: start;
+  grid-template-columns: 1fr 30%;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.left-img {
+  display: grid;
+  align-items: start;
+  grid-template-columns: 30% 1fr;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.content section {
+  display: grid;
+  line-height: 1.5;
+  text-align: justify;
+  gap: 1rem;
+}
+
+.content a {
+  padding: 0.6rem;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 0.4rem;
+  transition: all 0.4s ease-out;
+  text-decoration: none;
+  background: #292091;
+  color: white;
+}
+
+.content a:hover {
+  transform: scale(1.04);
+}
+
+.file {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  object-fit: cover;
+  height: 100%;
+}
+
+.file img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.divider h3 {
+  text-align: center;
+  font-size: 1.4rem;
+  padding-left: 0.6rem;
+  padding-right: 0.6rem;
+}
+
+.accomplishment {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.accomplishment a {
+  display: grid;
+  padding: 0.6rem;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 0.4rem;
+  transition: all 0.4s ease-out;
+  text-decoration: none;
+  background: #292091;
+  color: white;
+}
+
+@media screen and (min-width: 720px) {
+  main {
+    width: 85%;
+    margin: auto;
+  }
+
+  .sdg {
+    grid-template-columns: auto 1fr;
+    display: grid;
+  }
+
+  .sdg img {
+    height: 200px;
+    width: 200px;
+    padding: 0rem;
+    margin: 0px;
+  }
+
+  .divider h3 {
+    text-align: center;
+    font-size: 1.8rem;
+  }
+}

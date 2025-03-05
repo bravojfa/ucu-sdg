@@ -38,36 +38,18 @@
   border-radius: 0.4rem;
 }
 
-.project h1 {
-  font-size: 1.8rem;
-  border-radius: 0.4rem;
-  text-transform: uppercase;
-  border-bottom: 6px double #912020;
-  color: #912020;
-  padding: 1rem;
-}
-
-.right-img {
-  display: grid;
-  align-items: start;
-  grid-template-columns: 1fr 30%;
-  padding: 2rem;
-  gap: 2rem;
-}
-
-.left-img {
-  display: grid;
-  align-items: start;
-  grid-template-columns: 30% 1fr;
-  padding: 2rem;
-  gap: 2rem;
-}
-
 .content section {
   display: grid;
   line-height: 1.5;
   text-align: justify;
+  align-content: space-between;
   gap: 1rem;
+}
+
+.content img {
+  height: 100%;
+  object-fit: fill;
+  object-position: top;
 }
 
 .content a {
@@ -85,20 +67,6 @@
   transform: scale(1.04);
 }
 
-.file {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  object-fit: cover;
-  height: 100%;
-}
-
-.file img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 .divider h3 {
   text-align: center;
   font-size: 1.4rem;
@@ -106,14 +74,12 @@
   padding-right: 0.6rem;
 }
 
-.accomplishment {
-  display: grid;
-  grid-template-columns: auto auto;
+.list {
   padding: 1rem;
-  gap: 1rem;
 }
 
-.accomplishment a {
+.accomplishment a,
+.list a {
   display: grid;
   padding: 0.6rem;
   font-weight: bold;
@@ -125,10 +91,57 @@
   color: white;
 }
 
+@media screen and (min-width: 300px) {
+  .project h1 {
+    font-size: 1.24rem;
+    border-radius: 0.4rem;
+    text-transform: uppercase;
+    border-bottom: 6px double #912020;
+    text-align: center;
+    color: #912020;
+    padding: 1rem;
+  }
+
+  .right-img {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+
+  .project h1 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .content {
+    padding: 1rem;
+  }
+
+  .content img {
+    height: auto;
+  }
+
+  .accomplishment {
+    display: grid;
+    padding: 1rem;
+    gap: 1rem;
+  }
+}
+
 @media screen and (min-width: 720px) {
   main {
     width: 85%;
     margin: auto;
+  }
+
+  .project h1 {
+    text-align: left;
+    font-size: 1.64rem;
+    border-radius: 0.4rem;
+    text-transform: uppercase;
+    border-bottom: 6px double #912020;
+    color: #912020;
+    padding: 1rem;
   }
 
   .sdg {
@@ -143,8 +156,31 @@
     margin: 0px;
   }
 
+  .right-img {
+    display: grid;
+    align-items: start;
+    grid-template-columns: 1fr 46%;
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  .left-img {
+    display: grid;
+    align-items: start;
+    grid-template-columns: 46% 1fr;
+    padding: 2rem;
+    gap: 2rem;
+  }
+
   .divider h3 {
     text-align: center;
     font-size: 1.8rem;
+  }
+
+  .accomplishment {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 1rem;
+    gap: 1rem;
   }
 }
